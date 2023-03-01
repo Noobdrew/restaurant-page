@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+
+:root {
+    --acent-color: #8E5528;
+    --main-color: #111C22;
+    --main-dark: #111214;
+    --main-light: #445B69;
+    --acent-color2: #B98B6A;
+    font-family: 'Noto Sans', sans-serif;
+    --font-color: #ebebeb;
+}
+
+body {
+    background-image: url(./restaurant-front.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin: 0;
+}
+
+header {
+    backdrop-filter: blur(5px);
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 0.35vh solid var(--acent-color2);
+}
+
+footer {
+    backdrop-filter: blur(3px);
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.35vh solid var(--acent-color2);
+    width: 100%;
+    height: 10vh;
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--acent-color2);
+}
+
+a:visited {
+    color: var(--acent-color);
+}
+
+.content {
+    height: 79.3vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    align-items: center;
+    font-size: 25px;
+}

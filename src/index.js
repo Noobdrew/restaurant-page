@@ -1,3 +1,3 @@
+//only for event listeners and calling modules 
 
-
-alert('wow')
+console.log('uAFI')

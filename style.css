@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+@font-face {
+    font-family: CopinScript;
+    src: url(./Chopinscript-gxXE.ttf);
+}
 
 :root {
     --acent-color: #8E5528;
@@ -40,9 +44,11 @@ footer {
     width: 100%;
     height: 10vh;
 }
-a:hover{
+
+a:hover {
     color: var(--acent-color2);
 }
+
 a:link {
     text-decoration: none;
     color: var(--font-color);
@@ -51,14 +57,17 @@ a:link {
 a:visited {
     color: var(--acent-color);
 }
-.active{
+
+.active {
     border-bottom: 2px solid var(--acent-color2);
 }
+
 .content {
     height: 79.3vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .nav {
@@ -68,16 +77,45 @@ a:visited {
     align-items: center;
     font-size: 25px;
 }
-.nav-button:hover{
+
+.nav-button:hover {
     border-bottom: 2px solid var(--acent-color2);
-} 
-.nav-button{
+}
+
+.nav-button {
 
     cursor: pointer;
     user-select: none;
 }
 
 
-.title{
+.title {
+    font-family: CopinScript;
+    display: flex;
+    justify-content: center;
+    color: var(--acent-color2);
+    font-size: 120px;
+    position: relative;
+    z-index: 0;
+}
 
+.sub-title {
+    font-family: 'Noto Sans';
+    color: var(--font-color);
+    position: absolute;
+    top: 85px;
+    font-size: 40px;
+    z-index: -1;
+}
+
+.title-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color);
+    font-size: 20px;
+}
+.title-description small{
+    font-size: 15px;
 }

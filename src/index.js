@@ -1,13 +1,14 @@
 //only for event listeners and calling modules 
 
 import createHome from './home'
+import createMenu from './menu'
 
 const homeButton = document.querySelector('.home')
 const menuButton = document.querySelector('.menu')
 const contactButton = document.querySelector('.contact')
 const content = document.querySelector('.content')
 
-createHome()
+//createHome()
 
 
 homeButton.addEventListener('click', addActive)
@@ -35,6 +36,7 @@ function addActive(e) {
         if (menuButton.classList.contains('active')) {
             content.innerHTML=''
             console.log('create menu')
+            createMenu()
         }
         if (contactButton.classList.contains('active')) {
             content.innerHTML=''

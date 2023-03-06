@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+
 @font-face {
     font-family: CopinScript;
     src: url(./Chopinscript-gxXE.ttf);
@@ -10,6 +11,8 @@
     --main-dark: #111214;
     --main-light: #445B69;
     --acent-color2: #B98B6A;
+    --default-font: 'Noto Sans', sans-serif;
+    ;
     font-family: 'Noto Sans', sans-serif;
     --font-color: #ebebeb;
 }
@@ -108,7 +111,7 @@ a:visited {
     z-index: -1;
 }
 
-.title-description{
+.title-description {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,6 +119,73 @@ a:visited {
     color: var(--font-color);
     font-size: 20px;
 }
-.title-description small{
+
+.title-description small {
     font-size: 15px;
+}
+
+.menu-list {
+
+    color: var(--font-color);
+    width: 80%;
+    height: 79.3vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    overflow: auto;
+    background-color: #41667c1e;
+    border-left: 2px solid var(--acent-color2);
+    border-right: 2px solid var(--acent-color2);
+    backdrop-filter: blur(5px);
+}
+
+/*scrollbar styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #41667c00;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--acent-color2);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--acent-color);
+}
+
+.menu-item {
+   padding: 40px;
+    width: 580px;
+}
+
+.menu-title {
+    font-family: CopinScript, sans-serif;
+    font-size: 36px;
+    color: var(--acent-color2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.menu-title .eng-title {
+    font-family: var(--default-font);
+    color: var(--font-color);
+    font-size: 15px;
+}
+
+.item-price{
+    font-family: var(--default-font);
+    color: var(--font-color);
+    font-size: 20px;
 }

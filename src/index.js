@@ -2,13 +2,14 @@
 
 import createHome from './home'
 import createMenu from './menu'
+import createContact from './contact'
 
 const homeButton = document.querySelector('.home')
 const menuButton = document.querySelector('.menu')
 const contactButton = document.querySelector('.contact')
 const content = document.querySelector('.content')
 
-//createHome()
+createHome()
 
 
 homeButton.addEventListener('click', addActive)
@@ -41,6 +42,7 @@ function addActive(e) {
         if (contactButton.classList.contains('active')) {
             content.innerHTML=''
             console.log('create contacts')
+            createContact()
         }
     }
 }

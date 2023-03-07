@@ -1,4 +1,3 @@
 # restaurant-page
- 
 
-  <a href='https://ginnerzapata.github.io/restaurant/'>Based on this webpage</a>
+Check our the <a href="https://noobdrew.github.io/restaurant-page"> Restaurant page </a>
